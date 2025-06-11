@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route; //ini import
 use App\Http\Controllers\Link;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\SemenController;
 
 /*
 |--------------------------------------------------------------------------
@@ -86,3 +87,11 @@ Route::get('/pegawai/edit/{id}',[PegawaiController::class, 'edit']);
 Route::post('/pegawai/update',[PegawaiController::class, 'update']);
 Route::get('/pegawai/hapus/{id}',[PegawaiController::class, 'hapus']);
 Route::get('/pegawai/cari',[PegawaiController::class, 'cari']);
+
+Route::get('/semen', [SemenController::class, 'index']);
+Route::get('/semen/tambah', [SemenController::class, 'tambah']);
+Route::post('/semen/store', [SemenController::class, 'store']);
+Route::get('/semen/edit/{id}', [SemenController::class, 'edit']);
+Route::post('/semen/update/{id}', [SemenController::class, 'update']);
+Route::get('/semen/hapus/{id}', [SemenController::class, 'hapus']);
+Route::get('/semen/cari', [SemenController::class, 'cari']);
