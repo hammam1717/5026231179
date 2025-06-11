@@ -6,12 +6,12 @@
     <form method="POST" action="/semen/update/{{ $semen->id }}">
         @csrf
         <div class="form-group">
-            <label for="merkbis">Merk Semen</label>
-            <input type="text" name="merkbis" class="form-control" value="{{ $semen->merksemen }}" required>
+            <label for="merksemen">Merk Semen</label>
+            <input type="text" name="merksemen" class="form-control" value="{{ $semen->merksemen }}" required>
         </div>
         <div class="form-group">
-            <label for="hargabis">Harga Semen</label>
-            <input type="number" name="hargabis" class="form-control" value="{{ $semen->hargasemen }}" required>
+            <label for="hargasemen">Harga Semen</label>
+            <input type="number" name="hargasemen" class="form-control" value="{{ $semen->hargasemen }}" required>
         </div>
         <div class="form-group">
             <label for="berat">Berat (kg)</label>

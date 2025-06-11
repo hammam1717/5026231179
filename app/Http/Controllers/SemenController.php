@@ -13,19 +13,19 @@ class SemenController extends Controller
         $semen = DB::table('semen')->paginate(10);
 
         // Mengirim data ke view index
-        return view('index3', ['semen' => $semen]);
+        return view('indexsemen', ['semen' => $semen]);
     }
 
     public function tambah()
     {
         // Menampilkan view tambah data semen
-        return view('tambah2');
+        return view('tambahsemen');
     }
 
     public function store(Request $request)
     {
         // Insert data ke dalam tabel semen
-        DB::table('bis')->insert([
+        DB::table('semen')->insert([
             'merksemen'   => $request->merksemen,
             'hargasemen'  => $request->hargasemen,
             'tersedia'  => $request->tersedia ? 1 : 0, // Checkbox disimpan sebagai 1 (true) atau 0 (false)
@@ -44,7 +44,7 @@ class SemenController extends Controller
             return redirect('/semen')->with('error', 'Data semen tidak ditemukan.');
         }
 
-        return view('edit2', ['semen' => $semen]);
+        return view('editsemen', ['semen' => $semen]);
     }
 
     public function update(Request $request)
@@ -78,6 +78,6 @@ class SemenController extends Controller
             ->where('merksemen', 'like', "%" . $cari . "%")
             ->paginate();
 
-        return view('index3', ['semen' => $semen]);
+        return view('indexsemen', ['semen' => $semen]);
     }
 }

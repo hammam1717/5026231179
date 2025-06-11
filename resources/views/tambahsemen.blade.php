@@ -16,7 +16,7 @@
             <input type="text" name="merksemen" class="form-control" placeholder="Merk Semen" required>
         </div>
         <div class="form-group">
-            <label for="hargabis">Harga Semen</label>
+            <label for="hargasemen">Harga Semen</label>
             <input type="number" name="hargasemen" class="form-control" placeholder="Harga Semen (tulis tanpa titik, co : 120000000)" required>
         </div>
         <div class="form-group">
@@ -29,5 +29,5 @@
         <button type="submit" class="btn btn-primary">Simpan</button>
     </form>
 
-    <a href="/bis" class="btn btn-secondary mt-3">Kembali</a>
+    <a href="/semen" class="btn btn-secondary mt-3">Kembali</a>
 @endsection
