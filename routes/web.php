@@ -97,11 +97,6 @@ Route::post('/semen/update/{id}', [SemenController::class, 'update']);
 Route::get('/semen/hapus/{id}', [SemenController::class, 'hapus']);
 Route::get('/semen/cari', [SemenController::class, 'cari']);
 
-Route::get('/karyawan', [KaryawanController::class, 'index']);
-Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah']);
-Route::post('/karyawan/store', [KaryawanController::class, 'store']);
-Route::get('/karyawan/hapus/{id}', [KaryawanController::class, 'hapus']);
-
 // Route CRUD Karyawan
 Route::get('/karyawan', [KaryawanController::class, 'index']);
 Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah']);

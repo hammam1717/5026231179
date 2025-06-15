@@ -50,7 +50,7 @@
                 <td>{{ strtoupper($k->namalengkap) }}</td>
                 <td>{{ $k->divisi }}</td>
                 <!-- Tampilkan huruf kecil semua -->
-                <td>{{ strtolower($k->departemen) }}</td>
+                <td>{{ strtoupper($k->departemen) }}</td>
                 <td>
                     <!-- Tombol Edit -->
                     <a href="/karyawan/edit/{{ $k->kodepegawai }}" class="btn btn-success">Edit</a>
