@@ -113,7 +113,7 @@
         <a href="/karyawan" class="btn btn-outline-primary btn-custom" target="_blank">
             <i class="fas fa-code mr-1"></i> Latihan 2
         </a>
-        <a href="/latihan3" class="btn btn-outline-primary btn-custom" target="_blank">
+        <a href="/keranjangbelanja" class="btn btn-outline-primary btn-custom" target="_blank">
             <i class="fas fa-terminal mr-1"></i> Latihan 3
         </a>
     </div>

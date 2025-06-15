@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SemenController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\keranjangbelanjaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -105,3 +106,10 @@ Route::get('/karyawan/edit/{id}', [KaryawanController::class, 'edit']);
 Route::post('/karyawan/update', [KaryawanController::class, 'update']);
 Route::delete('/karyawan/hapus/{id}', [KaryawanController::class, 'hapus']);
 Route::get('/karyawan/cari', [KaryawanController::class, 'cari']);
+
+// Route keranjang belanja
+Route::get('/keranjangbelanja', [keranjangbelanjaController::class, 'index']);
+Route::get('/keranjangbelanja/tambah', [keranjangbelanjaController::class, 'tambah']);
+Route::post('/keranjangbelanja/store', [keranjangbelanjaController::class, 'store']);
+Route::post('/keranjangbelanja/update', [keranjangbelanjaController::class, 'update']);
+Route::get('/keranjangbelanja/hapus/{id}', [keranjangbelanjaController::class, 'hapus']);
