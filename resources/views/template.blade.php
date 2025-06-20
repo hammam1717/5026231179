@@ -104,6 +104,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="/keranjangbelanja"><i class="fas fa-shopping-cart mr-1"></i>Latihan 3</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/chat"><i class="fas fa-shopping-cart mr-1"></i>Latihan Mandiri</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/eas"><i class="fas fa-shopping-cart mr-1"></i>EAS</a>
+            </li>
         </ul>
     </nav>
 

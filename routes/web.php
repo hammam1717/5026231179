@@ -7,6 +7,9 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SemenController;
 use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\keranjangbelanjaController;
+use App\Http\Controllers\ChatController;
+use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\NewKaryawanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -113,3 +116,13 @@ Route::get('/keranjangbelanja/tambah', [keranjangbelanjaController::class, 'tamb
 Route::post('/keranjangbelanja/store', [keranjangbelanjaController::class, 'store']);
 Route::post('/keranjangbelanja/update', [keranjangbelanjaController::class, 'update']);
 Route::get('/keranjangbelanja/hapus/{id}', [keranjangbelanjaController::class, 'hapus']);
+
+Route::get('/chat', [ChatController::class, 'index']);
+
+Route::get('/combo', [KategoriController::class, 'index']);
+Route::post('/combo', [KategoriController::class, 'submit']);
+
+Route::get('/eas', [NewKaryawanController::class, 'index'])->name('karyawan.index');
+Route::get('/eas/create', [NewKaryawanController::class, 'create'])->name('karyawan.create');
+Route::post('/eas', [NewKaryawanController::class, 'store'])->name('karyawan.store');
+Route::delete('/eas/{nip}', [NewKaryawanController::class, 'destroy'])->name('karyawan.destroy');

@@ -116,6 +116,9 @@
         <a href="/keranjangbelanja" class="btn btn-outline-primary btn-custom" target="_blank">
             <i class="fas fa-terminal mr-1"></i> Latihan 3
         </a>
+        <a href="/chat" class="btn btn-outline-primary btn-custom" target="_blank">
+            <i class="fas fa-terminal mr-1"></i> Latihan Mandiri
+        </a>
     </div>
 </div>
 
